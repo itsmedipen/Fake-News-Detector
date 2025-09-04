@@ -48,7 +48,7 @@ with open('Tfidf.pkl','rb') as f:
 st.title("Fake news classification")
 
 # User input
-user_input = st.text_area('Enter your message:',placeholder = 'Check messages')
+user_input = st.text_area('Enter your message:')
 
 if st.button("Predict",type= 'primary') and user_input.strip() != '':
     with st.spinner('Predicting...'):
